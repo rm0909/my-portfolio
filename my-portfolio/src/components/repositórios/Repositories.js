@@ -1,12 +1,12 @@
-import flaUrl from "./realsizeimg/flaimg.png"
-import quizAppUrl from "./realsizeimg/quizimg.png"
-import listaUrl from "./realsizeimg/listaimg.png"
-import memoriaUrl from "./realsizeimg/memoriaimg.png"
-import calculadoraUrl from "./realsizeimg/calculadoraimg.png"
-import tictacUrl from "./realsizeimg/ticimg.png"
-import pptUrl from "./realsizeimg/pptimg.png"
-import chuckUrl from "./realsizeimg/chuckimg.png"
-import countUrl from "./realsizeimg/countdownimg.png"
+import flaUrl from "./images/flaimg.png"
+import quizAppUrl from "./images/quizimg.png"
+import listaUrl from "./images/listaimg.png"
+import memoriaUrl from "./images/memoriaimg.png"
+import calculadoraUrl from "./images/calculadoraimg.png"
+import tictacUrl from "./images/ticimg.png"
+import pptUrl from "./images/pptimg.png"
+import chuckUrl from "./images/chuckimg.png"
+import countUrl from "./images/countdownimg.png"
 
 export const projects = [
   {
