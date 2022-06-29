@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,400;0,700;1,500&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", "Tahoma", sans-serif;
+  color: #eeeaea;
+}
+body{
+  background-color: #21232B;
+  width: 100%;
+}
+nav {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;  
+}
+a{
+  text-decoration: none;
+}
+p{
+  margin:1em
+}
+#nav-email {
+  margin-left: 1.8vw;
+  font-size: 1em;
+  font-weight: 400;
+}
+#name{
+  font-size: 3.5em;
+  font-weight: bold;
+}
+#dev{
+  font-size: 1.4em;
+  font-weight: lighter;
+}
+.nav-buttons {
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.inline {
+  width: fit-content;
+  display: inline;
+}
+.main-block {
+  height: 90vh;
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+.name-bio {
+  width: 50vw;
+  text-align: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+}
+.flex-row {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.skill-main-block{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.skill-box-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70vw
+}
+.skill-box{
+  background-color: #2C2E36;
+  width: 250px;
+  height: 320px;
+  text-align: center;
+}
+.skills-column{
+  padding: 1.5em;
+}
+.icon-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
