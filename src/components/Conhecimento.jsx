@@ -23,69 +23,70 @@ function Conhecimento() {
         <h1>Conhecimento</h1>
         <div className="skill-box-container">
           <div className="skill-box">
-            <h1>Frontend</h1>
+            <h2>Frontend</h2>
             <div className="skills-column">
               <span className="icon-text">
                 <FaHtml5 />
-                <p>HTML</p>
+                <h3>HTML</h3>
               </span>
               <span className="icon-text">
                 <FaCss3 />
-                <p>CSS</p>
+                <h3>CSS</h3>
               </span>
               <span className="icon-text">
                 <SiJavascript />
-                <p>Javascript</p>
+                <h3>Javascript</h3>
               </span>
               <span className="icon-text">
                 <FaReact />
-                <p>React</p>
+                <h3>React</h3>
               </span>
             </div>
           </div>
           <div className="skill-box">
-            <h1>Backend</h1>
+            <h2>Backend</h2>
             <div className="skills-column">
               <span className="icon-text">
                 <FaNodeJs />
-                <p>Node</p>
+                <h3>Node</h3>
               </span>
               <span className="icon-text">
                 <SiExpress />
-                <p>Express</p>
+                <h3>Express</h3>
               </span>
               <span className="icon-text">
                 <SiMongodb />
-                <p>MongoDB</p>
+                <h3>MongoDB</h3>
               </span>
               <span className="icon-text">
                 <SiJsonwebtokens />
-                <p>jwt</p>
+                <h3>jwt</h3>
               </span>
             </div>
           </div>
           <div className="skill-box">
-            <h1>Ferramentas</h1>
+            <h2>Ferramentas</h2>
             <div className="skills-column">
               <span className="icon-text">
                 <SiVisualstudiocode />
-                <p>VSCode</p>
+                <h3>VSCode</h3>
               </span>
               <span className="icon-text">
                 <SiGithub />
-                <p>Github Desktop</p>
+                <h3>Github Desktop</h3>
               </span>
               <span className="icon-text">
                 <SiInsomnia />
-                <p>Insomnia</p>
+                <h3>Insomnia</h3>
               </span>
               <span className="icon-text">
                 <SiHeroku />
-                <p>Heroku</p>
+                <h3>Heroku</h3>
               </span>
             </div>
           </div>
         </div>
+       
       </main>
     </>
   );

@@ -4,13 +4,14 @@
   place-items: center;
   place-content: center;
   gap: 1rem;
- 
+ margin: 5px;
+
 }
 .projetos-box{
   border-radius: 3px;
   background-color:#2C2E36;
   width: 270px;
-  height: 235px;
+  height: 300px;
 }
 .projetos-img{
   padding-top: 10px;
@@ -23,4 +24,15 @@
 
 img{
   border-radius: 3px;
+}
+.description{
+  font-size: .72em;
+  font-weight: 300;
+}
+.inline-text{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
 }
