@@ -9,9 +9,13 @@
 }
 .projetos-box{
   border-radius: 3px;
-  background-color:#2C2E36;
+  border: 1px solid #222329;
+  background-color:#26272e;
   width: 270px;
   height: 300px;
+}
+.projetos-box p{
+  margin: 0.8em;
 }
 .projetos-img{
   padding-top: 10px;
@@ -26,9 +30,10 @@ img{
   border-radius: 3px;
 }
 .description{
-  font-size: .72em;
+  font-size: .8em;
   font-weight: 300;
 }
+
 .inline-text{
   display: flex;
   flex-direction: row;

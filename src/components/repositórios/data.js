@@ -28,7 +28,7 @@ export const projects = [
   {
     name: "Lista de Compras",
     description: "Crie uma lista compras",
-    buildWith: "REST API, React hooks, routers - Node Express, Mongodb mongoose models, JWT, dotenv",
+    buildWith: "CRUD, REST API, React hooks, routers - Node Express, Mongodb mongoose models, JWT, dotenv",
     page: "https://rm0909.github.io/grocery-list-react/",
     img: listaUrl,
     githublink: "https://github.com/rm0909/grocery-list-react",
@@ -68,7 +68,7 @@ export const projects = [
   {
     name: "Jogo da Velha (React)",
     description:"Jogo da velha, primeiro app em react",
-    buildWith: "React",
+    buildWith: "React: Hooks",
     page: "https://rm0909.github.io/react-tic-tac-toe/",
     img: tictacUrl,
     githublink: "https://github.com/rm0909/react-tic-tac-toe",
