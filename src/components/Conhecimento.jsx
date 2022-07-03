@@ -107,6 +107,10 @@ function Conhecimento() {
             </ul>
           </section>
         </div>
+        <section className="next-steps">
+             <h1>Próximos Passos:</h1>
+             <h3>Masterizar React e aprender TypesScript</h3>
+          </section>
       </main>
     </>
   );

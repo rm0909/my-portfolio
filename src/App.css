@@ -125,25 +125,31 @@ p {
 }
 .exp {
   width: 100%;
-  background-color: white;
+  background-color:var(--bckgrd-color-secondary);
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.exp h1 {
-  color: var(--bckgrd-color-default);
-}
 .exp-ul {
   width: 40vw;
 }
+.exp h1{
+  margin: 1em;
+}
 ul{
-  text-align: start;
+  text-align: center;
 }
 li {
-  color: var(--bckgrd-color-default);
-  list-style:square;
+  color: white;
+  list-style: none;
   font-size: 1.2em;
-  font-weight: 600;
   padding-bottom: 1em;
+}
+.next-steps{
+  margin-bottom:1em;
+  text-align: center;
+}
+.next-steps h1{
+  margin: 1em;
 }
