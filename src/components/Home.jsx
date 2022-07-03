@@ -31,21 +31,20 @@ function Home() {
           <div className="flex-row">
             <div className="flex-column">
               <FiTwitter />
-              <p>twitter</p>
+              <div>twitter</div>
             </div>
             <div className="flex-column">
-              <FiGithub />
-              <a href="https://github.com/rm0909">
-                <p>Github</p>
+             <a href="https://github.com/rm0909"> <FiGithub />
+                <div>Github</div>
               </a>
             </div>
             <div className="flex-column">
               <GrLinkedin />
-              <p>Linkedin</p>
+              <div>Linkedin</div>
             </div>
             <div className="flex-column">
               <ImWhatsapp />
-              <p>(21)9752-42151</p>
+              <div>(21)9752-42151</div>
             </div>
           </div>
         </div>

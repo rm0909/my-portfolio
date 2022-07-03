@@ -1,6 +1,6 @@
 import { Nav } from "./Nav";
 import { Link } from "react-router-dom";
-import { FaHtml5, FaCss3, FaReact, FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaArrowDown } from "react-icons/fa";
 import {
   SiJavascript,
   SiExpress,
@@ -13,7 +13,7 @@ import {
 } from "react-icons/si";
 function Conhecimento() {
   return (
-    <>
+    <div>
       <Nav
         navA={<Link to="/">Home</Link>}
         navB={<Link to="/projetos">Projetos</Link>}
@@ -21,7 +21,7 @@ function Conhecimento() {
 
       <main className="skill-main-block">
         <h1>Conhecimento</h1>
-        <div className="skill-box-container">
+        <section className="skill-box-container">
           <div className="skill-box">
             <h2>Frontend</h2>
             <div className="skills-column">
@@ -85,7 +85,8 @@ function Conhecimento() {
               </span>
             </div>
           </div>
-        </div>
+        </section>
+        <FaArrowDown/>
         <div className="exp">
           <section className="exp-ul">
             <h1>Experiência em:</h1>
@@ -112,7 +113,7 @@ function Conhecimento() {
              <h3>Masterizar React e aprender TypesScript</h3>
           </section>
       </main>
-    </>
+    </div>
   );
 }
 export { Conhecimento };

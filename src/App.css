@@ -4,7 +4,7 @@
   --bckgrd-color-secondary: #2c2e36;
   --bckgrd-color-third: #202125;
 }
-*,
+*,html,
 ::after,
 ::before {
   margin: 0;
@@ -15,10 +15,11 @@
 }
 body {
   background-color: var(--bckgrd-color-default);
-  width: 100%;
+ 
 }
 nav {
-  margin: 5px;
+  background-color: var(--bckgrd-color-secondary);
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -46,6 +47,7 @@ p {
   font-size: 1.4em;
   font-weight: lighter;
 }
+
 .nav-buttons {
   width: 20vw;
   display: flex;
@@ -59,6 +61,7 @@ p {
 }
 .main-block {
   height: 90vh;
+  width: 100%;
   display: grid;
   place-items: center;
   place-content: center;
@@ -89,7 +92,7 @@ p {
 }
 .skill-main-block h1 {
   font-size: 2.5em;
-  margin: 2em;
+  margin: 1em;
 }
 .skill-box-container {
   margin-bottom: 5em;
@@ -97,7 +100,7 @@ p {
   flex-direction: row;
   justify-content: space-around;
   width: 70vw;
-  height: 44vh;
+  height: 56vh;
 }
 .skill-box {
   background-color: var(--bckgrd-color-secondary);
@@ -135,7 +138,7 @@ p {
   width: 40vw;
 }
 .exp h1{
-  margin: 1em;
+  margin-bottom: 1em;
 }
 ul{
   text-align: center;
@@ -144,7 +147,7 @@ li {
   color: white;
   list-style: none;
   font-size: 1.2em;
-  padding-bottom: 1em;
+  padding-bottom: 0.8em;
 }
 .next-steps{
   margin-bottom:1em;
@@ -153,3 +156,12 @@ li {
 .next-steps h1{
   margin: 1em;
 }
+@media (max-width: 600px) { 
+  .skill-box-container {
+    flex-direction: column;
+    height: 100%;
+  }
+  .exp-ul {
+    width: 100vw;
+  }
+ }
