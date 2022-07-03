@@ -86,7 +86,27 @@ function Conhecimento() {
             </div>
           </div>
         </div>
-       
+        <div className="exp">
+          <section className="exp-ul">
+            <h1>Experiência em:</h1>
+            <ul>
+              <li>Tags seo do html5</li>
+              <li>Responsividade com CSS Grid e Flex</li>
+              <li>Manipulção do DOM com Javascript</li>
+              <li>Funções de array como map, filter, sort e reduce</li>
+              <li>Funções Assíncronas</li>
+              <li>Fetch / Axios para fazer requisições http</li>
+              <li>Node package manager</li>
+              <li>Criar RESTful api com Express</li>
+              <li>Criar Modelos com mongoose</li>
+              <li>Atribuir um documento da database a um usuário</li>
+              <li>Gerar json web token</li>
+              <li>Extrair dados de um token</li>
+              <li>React States, Hooks, Props, Context</li>
+              <li>React Router, Icons</li>
+            </ul>
+          </section>
+        </div>
       </main>
     </>
   );

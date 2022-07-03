@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,400;0,700;1,500&display=swap");
+:root {
+  --bckgrd-color-default: #21232b;
+  --bckgrd-color-secondary: #2c2e36;
+  --bckgrd-color-third: #202125;
+}
 *,
 ::after,
 ::before {
@@ -8,8 +13,8 @@
   font-family: "Work Sans", "Tahoma", sans-serif;
   color: #eeeaea;
 }
-body{
-  background-color: #21232B;
+body {
+  background-color: var(--bckgrd-color-default);
   width: 100%;
 }
 nav {
@@ -17,24 +22,27 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
 }
-a{
+nav a:hover {
+  text-decoration: underline;
+}
+a {
   text-decoration: none;
 }
-p{
-  margin:1em
+p {
+  margin: 1em;
 }
 #nav-email {
   margin-left: 1.8vw;
   font-size: 1em;
   font-weight: 400;
 }
-#name{
+#name {
   font-size: 3.5em;
   font-weight: bold;
 }
-#dev{
+#dev {
   font-size: 1.4em;
   font-weight: lighter;
 }
@@ -73,40 +81,69 @@ p{
   align-items: center;
   justify-content: space-around;
 }
-.skill-main-block{
-  height: 90vh;
+.skill-main-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-.skill-box-container{
+.skill-main-block h1 {
+  font-size: 2.5em;
+  margin: 2em;
+}
+.skill-box-container {
+  margin-bottom: 5em;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 70vw
+  width: 70vw;
+  height: 44vh;
 }
-.skill-box{
-  background-color: #2C2E36;
+.skill-box {
+  background-color: var(--bckgrd-color-secondary);
   width: 250px;
   height: 320px;
   text-align: center;
   border: 1px solid white;
 }
-.skill-box h2{
+.skill-box h2 {
   border-bottom: 1px solid white;
 }
-.skill-box h3{
+.skill-box h3 {
   font-weight: 500;
   margin: 1em;
 }
-.skills-column{
+.skills-column {
   padding: 1.5em;
 }
-.icon-text{
+.icon-text {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+.exp {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.exp h1 {
+  color: var(--bckgrd-color-default);
+}
+.exp-ul {
+  width: 40vw;
+}
+ul{
+  text-align: start;
+}
+li {
+  color: var(--bckgrd-color-default);
+  list-style:square;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding-bottom: 1em;
 }
