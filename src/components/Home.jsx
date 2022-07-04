@@ -44,7 +44,7 @@ function Home() {
             </div>
             <div className="flex-column">
               <ImWhatsapp />
-              <div>(21)9752-42151</div>
+              <div>(00)0000-0000</div>
             </div>
           </div>
         </div>

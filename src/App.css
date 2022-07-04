@@ -4,9 +4,11 @@
   --bckgrd-color-secondary: #2c2e36;
   --bckgrd-color-third: #202125;
 }
-*,html,
-::after,
-::before {
+* { outline: solid 0.25rem hsla(210, 100%, 100%, 0.5); }
+*,
+html,
+:after,
+:before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,11 +17,10 @@
 }
 body {
   background-color: var(--bckgrd-color-default);
- 
 }
+
 nav {
   background-color: var(--bckgrd-color-secondary);
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -60,8 +61,8 @@ p {
   display: inline;
 }
 .main-block {
-  height: 90vh;
-  width: 100%;
+  /* height: 90vh;
+  width: 100%; */
   display: grid;
   place-items: center;
   place-content: center;
@@ -75,7 +76,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: inherit;
+  /* height: inherit; */
 }
 .flex-row {
   padding: 1em;
@@ -98,9 +99,11 @@ p {
   margin-bottom: 5em;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
+  gap: 5px;
   width: 70vw;
-  height: 56vh;
+  /* height: 56vh; */
 }
 .skill-box {
   background-color: var(--bckgrd-color-secondary);
@@ -128,7 +131,7 @@ p {
 }
 .exp {
   width: 100%;
-  background-color:var(--bckgrd-color-secondary);
+  background-color: var(--bckgrd-color-secondary);
   text-align: center;
   display: flex;
   align-items: center;
@@ -137,10 +140,10 @@ p {
 .exp-ul {
   width: 40vw;
 }
-.exp h1{
+.exp h1 {
   margin-bottom: 1em;
 }
-ul{
+ul {
   text-align: center;
 }
 li {
@@ -149,19 +152,16 @@ li {
   font-size: 1.2em;
   padding-bottom: 0.8em;
 }
-.next-steps{
-  margin-bottom:1em;
+.next-steps {
+  margin-bottom: 1em;
   text-align: center;
 }
-.next-steps h1{
+.next-steps h1 {
   margin: 1em;
 }
-@media (max-width: 600px) { 
-  .skill-box-container {
-    flex-direction: column;
-    height: 100%;
-  }
+
+@media (max-width: 600px) {
   .exp-ul {
     width: 100vw;
   }
- }
+}
