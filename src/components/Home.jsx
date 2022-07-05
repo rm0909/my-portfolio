@@ -1,6 +1,6 @@
 import { Nav } from "./Nav";
 import { Link } from "react-router-dom";
-import {MdPhone} from "react-icons/md"
+import { MdPhone } from "react-icons/md";
 import { FiTwitter, FiGithub } from "react-icons/fi";
 import { GrLinkedin } from "react-icons/gr";
 import { AiOutlineMail } from "react-icons/ai";
@@ -9,17 +9,23 @@ function Home() {
   return (
     <div>
       <Nav
-      navMain={<Link to="/form"><AiOutlineMail size="20px" style={{verticalAlign: "middle",margin: "1px"}}/>raphael.mm.91@gmail.com</Link>}
-        navA={<Link to="conhecimento">Conhecimento</Link>}
+        navMain={
+          <Link to="/form">
+            <AiOutlineMail
+              size="20px"
+              style={{ verticalAlign: "middle", margin: "1px" }}
+            />
+            Email
+          </Link>
+        }
+        navA={<Link to="conhecimento">Experiência</Link>}
         navB={<Link to="projetos">Projetos</Link>}
       />
       <main className="home-main">
         <div className="center">
           <div className="name-paragraph-container">
-            <h1 id="name" >
-              Raphael Machado{" "}
-            </h1>
-            <h5 id="dev" >
+            <h1 id="name">Raphael Machado </h1>
+            <h5 id="dev">
               <i> Web Developer</i>
             </h5>
             <br />
@@ -33,25 +39,29 @@ function Home() {
           </div>
         </div>
 
-        <section id="social-media-row">
-          <div className="social-media-box">
-            <a href="#" target="_blank">
-              <FiTwitter />
-              <p className="icon-text">Twitter </p>
-            </a>
-          </div>
-          <div className="social-media-box">
-            <a href="https://github.com/rm0909" target="_blank">
-              {" "}
-              <FiGithub />
-              <p className="icon-text">Github</p>
-            </a>
-          </div>
-          <div className="social-media-box">
-            <a href="#" target="_blank">
-              <GrLinkedin />
-              <p className="icon-text">Linkedin</p>
-            </a>
+        <section>
+          <div className="social-media-outter-div">
+            <div id="social-media-row">
+              <div className="social-media-box">
+                <a href="#" target="_blank">
+                  <FiTwitter />
+                  <p className="icon-text">Twitter </p>
+                </a>
+              </div>
+              <div className="social-media-box">
+                <a href="https://github.com/rm0909" target="_blank">
+                  {" "}
+                  <FiGithub />
+                  <p className="icon-text">Github</p>
+                </a>
+              </div>
+              <div className="social-media-box">
+                <a href="#" target="_blank">
+                  <GrLinkedin />
+                  <p className="icon-text">Linkedin</p>
+                </a>
+              </div>
+            </div>
           </div>
         </section>
         <section className="contact-column">

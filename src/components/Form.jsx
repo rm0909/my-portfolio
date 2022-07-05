@@ -1,8 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Nav } from "./Nav";
 import { Link } from "react-router-dom";
+
 function Form() {
+  const [messageStatus,setMessageStatus] = useState(false)
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -18,11 +20,11 @@ function Form() {
         (result) => {
           console.log(result.text);
           form.current.value = ""
-          alert("mensagem enviada")
+          setMessageStatus(true)
         },
         (error) => {
           console.log(error.text);
-          alert("erro ao enviar mensagem")
+          alert("Houve um erro ao enviar email.")
         }
       );
   };
@@ -43,6 +45,7 @@ function Form() {
         <label>Mensagem</label>
         <textarea name="message" />
         <input type="submit" value="Enviar" required/>
+        {messageStatus && <p id="messageStatus">EMAIL ENVIADO!</p>}
       </form>
       </section>
     </main>

@@ -9,9 +9,9 @@ function Projetos() {
   return (
     <main>
       <Nav
-      navMain={<Link to="/form"><AiOutlineMail size="20px" style={{verticalAlign: "middle",margin: "1px"}}/>raphael.mm.91@gmail.com</Link>}
+      navMain={<Link to="/form"><AiOutlineMail size="20px" style={{verticalAlign: "middle",margin: "1px"}}/>Email</Link>}
         navA={<Link to="/">Home</Link>}
-        navB={<Link to="/conhecimento">Conhecimento</Link>}
+        navB={<Link to="/conhecimento">Experiência</Link>}
       />
       <section className="project-wrapper">
         {data.map((repo) => {
