@@ -1,55 +1,69 @@
 import { Nav } from "./Nav";
 import { Link } from "react-router-dom";
-import { ImWhatsapp } from "react-icons/im";
+import {MdPhone} from "react-icons/md"
 import { FiTwitter, FiGithub } from "react-icons/fi";
 import { GrLinkedin } from "react-icons/gr";
+import { AiOutlineMail } from "react-icons/ai";
 function Home() {
   return (
-    <>
+    <div>
       <Nav
         navA={<Link to="conhecimento">Conhecimento</Link>}
         navB={<Link to="projetos">Projetos</Link>}
       />
-      <main className="main-block">
-        <div className="name-bio">
-                    <span className="inline">
-              {" "}
-              <h1 className="inline" id="name">
-                Raphael Machado{" "}
-              </h1>
-              <h5 className="inline" id="dev">
-                <i> Web Developer</i>
-              </h5>
-            </span>
-            <p>
+      <main className="home-main">
+        <div className="center">
+          <div className="name-paragraph-container">
+            <h1 id="name" >
+              Raphael Machado{" "}
+            </h1>
+            <h5 id="dev" >
+              <i> Web Developer</i>
+            </h5>
+            <br />
+            <br />
+            <br />
+            <blockquote>
               Há um ano descobri o mundo da programação e desde então aprendo
               coisas novas a cada dia. Me sinto entusiasmado com as coisas
               incríveis que podemos criar com códigos.
-            </p>{" "}
-          
-
-          <div className="flex-row">
-            <div className="flex-column">
-              <FiTwitter />
-              <div>twitter</div>
-            </div>
-            <div className="flex-column">
-             <a href="https://github.com/rm0909"> <FiGithub />
-                <div>Github</div>
-              </a>
-            </div>
-            <div className="flex-column">
-              <GrLinkedin />
-              <div>Linkedin</div>
-            </div>
-            <div className="flex-column">
-              <ImWhatsapp />
-              <div>(00)0000-0000</div>
-            </div>
+            </blockquote>{" "}
           </div>
         </div>
+
+        <section id="social-media-row">
+          <div className="social-media-box">
+            <a href="#" target="_blank">
+              <FiTwitter />
+              <p className="icon-text">Twitter </p>
+            </a>
+          </div>
+          <div className="social-media-box">
+            <a href="https://github.com/rm0909" target="_blank">
+              {" "}
+              <FiGithub />
+              <p className="icon-text">Github</p>
+            </a>
+          </div>
+          <div className="social-media-box">
+            <a href="#" target="_blank">
+              <GrLinkedin />
+              <p className="icon-text">Linkedin</p>
+            </a>
+          </div>
+        </section>
+        <section className="contact-column">
+          <div className="contact-row">
+            <MdPhone />
+            <p>(21)9752-42151</p>
+          </div>
+          <div className="contact-row">
+            <AiOutlineMail />
+            <p>raphael.mm.91@gmail.com</p>
+          </div>
+        </section>
       </main>
-    </>
+    </div>
   );
 }
 export { Home };

@@ -1,6 +1,20 @@
 import { Nav } from "./Nav";
+
 import { Link } from "react-router-dom";
-import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaArrowDown } from "react-icons/fa";
+import {
+  GoDeviceDesktop,
+  GoServer,
+  GoDatabase,
+  GoGitBranch,
+} from "react-icons/go";
+import {
+  FaHtml5,
+  FaCss3,
+  FaReact,
+  FaNodeJs,
+  FaArrowDown,
+  FaCode,
+} from "react-icons/fa";
 import {
   SiJavascript,
   SiExpress,
@@ -18,100 +32,97 @@ function Conhecimento() {
         navA={<Link to="/">Home</Link>}
         navB={<Link to="/projetos">Projetos</Link>}
       />
-
-      <main className="skill-main-block">
-        <h1>Conhecimento</h1>
-        <section className="skill-box-container">
-          <div className="skill-box">
+      <main className="skills-main">
+        <div>
+          <section className="experience-block">
+            <div className="experience-row">
+              <div className="experience-box">
+                <GoDeviceDesktop size="128px" />
+                  <p>Páginas semânticas e responsivas para todos os tipos de dispositivos pensando na boa experiência do usuário</p>
+              </div>
+              <div className="experience-box">
+                <FaCode size="128px" />
+                <p>Aplicações usando Javascript ou React</p>
+              </div>
+              <div className="experience-box">
+                <GoServer size="128px" />
+                <p>Criação de rotas utilizando Node Express e autenticação de usuários com JWT</p>
+              </div>
+              <div className="experience-box">
+                <GoDatabase size="128px" />
+                <p>Databases Mongo DB</p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section className="skills-container">
+          <div className="skills-box">
             <h2>Frontend</h2>
             <div className="skills-column">
-              <span className="icon-text">
-                <FaHtml5 />
+              <span className="skills-row">
+                <FaHtml5 size="1.5em" />
                 <h3>HTML</h3>
               </span>
-              <span className="icon-text">
-                <FaCss3 />
+              <span className="skills-row">
+                <FaCss3 size="1.5em" />
                 <h3>CSS</h3>
               </span>
-              <span className="icon-text">
-                <SiJavascript />
+              <span className="skills-row">
+                <SiJavascript size="1.5em" />
                 <h3>Javascript</h3>
               </span>
-              <span className="icon-text">
-                <FaReact />
+              <span className="skills-row">
+                <FaReact size="1.5em" />
                 <h3>React</h3>
               </span>
             </div>
           </div>
-          <div className="skill-box">
+          <div className="skills-box">
             <h2>Backend</h2>
             <div className="skills-column">
-              <span className="icon-text">
-                <FaNodeJs />
+              <span className="skills-row">
+                <FaNodeJs size="1.5em" />
                 <h3>Node</h3>
               </span>
-              <span className="icon-text">
-                <SiExpress />
+              <span className="skills-row">
+                <SiExpress size="1.5em" />
                 <h3>Express</h3>
               </span>
-              <span className="icon-text">
-                <SiMongodb />
-                <h3>MongoDB</h3>
+              <span className="skills-row">
+                <SiMongodb size="1.5em" />
+                <h3>Mongo DB</h3>
               </span>
-              <span className="icon-text">
-                <SiJsonwebtokens />
-                <h3>jwt</h3>
+              <span className="skills-row">
+                <SiJsonwebtokens size="1.5em" />
+                <h3>J W T</h3>
               </span>
             </div>
           </div>
-          <div className="skill-box">
+          <div className="skills-box">
             <h2>Ferramentas</h2>
             <div className="skills-column">
-              <span className="icon-text">
-                <SiVisualstudiocode />
+              <span className="skills-row">
+                <SiVisualstudiocode size="1.5em" />
                 <h3>VSCode</h3>
               </span>
-              <span className="icon-text">
-                <SiGithub />
+              <span className="skills-row">
+                <SiGithub size="1.3em" />
                 <h3>Github Desktop</h3>
               </span>
-              <span className="icon-text">
-                <SiInsomnia />
+              <span className="skills-row">
+                <SiInsomnia size="1.5em" />
                 <h3>Insomnia</h3>
               </span>
-              <span className="icon-text">
-                <SiHeroku />
+              <span className="skills-row">
+                <SiHeroku size="1.5em" />
                 <h3>Heroku</h3>
               </span>
             </div>
           </div>
         </section>
-        <FaArrowDown/>
-        <div className="exp">
-          <section className="exp-ul">
-            <h1>Experiência em:</h1>
-            <ul>
-              <li>Tags seo do html5</li>
-              <li>Responsividade com CSS Grid e Flex</li>
-              <li>Manipulção do DOM com Javascript</li>
-              <li>Funções de array como map, filter, sort e reduce</li>
-              <li>Funções Assíncronas</li>
-              <li>Fetch / Axios para fazer requisições http</li>
-              <li>Node package manager</li>
-              <li>Criar RESTful api com Express</li>
-              <li>Criar Modelos com mongoose</li>
-              <li>Atribuir um documento da database a um usuário</li>
-              <li>Gerar json web token</li>
-              <li>Extrair dados de um token</li>
-              <li>React States, Hooks, Props, Context</li>
-              <li>React Router, Icons</li>
-            </ul>
-          </section>
-        </div>
-        <section className="next-steps">
-             <h1>Próximos Passos:</h1>
-             <h3>Masterizar React e aprender TypesScript</h3>
-          </section>
+        {/* <span id="arrow-down">
+          <FaArrowDown />
+        </span> */}
       </main>
     </div>
   );
