@@ -1,6 +1,7 @@
 import { Nav } from "./Nav";
 import { Link } from "react-router-dom";
 import { SiGithub } from "react-icons/si";
+import { AiOutlineMail } from "react-icons/ai";
 import { projects as data } from "./repositórios/data";
 
 
@@ -8,6 +9,7 @@ function Projetos() {
   return (
     <main>
       <Nav
+      navMain={<Link to="/form"><AiOutlineMail size="20px" style={{verticalAlign: "middle",margin: "1px"}}/>raphael.mm.91@gmail.com</Link>}
         navA={<Link to="/">Home</Link>}
         navB={<Link to="/conhecimento">Conhecimento</Link>}
       />
@@ -23,7 +25,7 @@ function Projetos() {
                 <span className="inline-text">
                   <p>{repo.name}</p>{" "}
                   <a href={repo.githublink} target="_blank">
-                    {<SiGithub />}
+                    {<SiGithub size="1.2em" style={{verticalAlign: "middle"}}/>}
                   </a>
                 </span>
                 <p className="description">{repo.description}</p>

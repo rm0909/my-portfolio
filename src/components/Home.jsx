@@ -4,10 +4,12 @@ import {MdPhone} from "react-icons/md"
 import { FiTwitter, FiGithub } from "react-icons/fi";
 import { GrLinkedin } from "react-icons/gr";
 import { AiOutlineMail } from "react-icons/ai";
+
 function Home() {
   return (
     <div>
       <Nav
+      navMain={<Link to="/form"><AiOutlineMail size="20px" style={{verticalAlign: "middle",margin: "1px"}}/>raphael.mm.91@gmail.com</Link>}
         navA={<Link to="conhecimento">Conhecimento</Link>}
         navB={<Link to="projetos">Projetos</Link>}
       />

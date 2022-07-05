@@ -1,6 +1,6 @@
 import { Nav } from "./Nav";
-
 import { Link } from "react-router-dom";
+import { AiOutlineMail } from "react-icons/ai";
 import {
   GoDeviceDesktop,
   GoServer,
@@ -29,6 +29,7 @@ function Conhecimento() {
   return (
     <div>
       <Nav
+        navMain={<Link to="/form"><AiOutlineMail size="20px" style={{verticalAlign: "middle",margin: "1px"}}/>raphael.mm.91@gmail.com</Link>}
         navA={<Link to="/">Home</Link>}
         navB={<Link to="/projetos">Projetos</Link>}
       />
@@ -46,7 +47,7 @@ function Conhecimento() {
               </div>
               <div className="experience-box">
                 <GoServer size="128px" />
-                <p>Criação de rotas utilizando Node Express e autenticação de usuários com JWT</p>
+                <p>Criação de REST API's utilizando Node Express e autenticação de usuários com JWT</p>
               </div>
               <div className="experience-box">
                 <GoDatabase size="128px" />
