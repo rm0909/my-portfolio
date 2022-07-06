@@ -36,7 +36,7 @@ function Conhecimento() {
       <main className="skills-main">
         <div>
           <section className="experience-block">
-            <div className="experience-row">
+            <div className="experience-grid">
               <div className="experience-box">
                 <GoDeviceDesktop size="128px" />
                   <p>Páginas semânticas e responsivas para todos os tipos de dispositivos pensando na boa experiência do usuário</p>
@@ -59,20 +59,20 @@ function Conhecimento() {
         <section className="skills-container">
           <div className="skills-box">
             <h2>Frontend</h2>
-            <div className="skills-column">
-              <span className="skills-row">
+            <div className="skills-row">
+              <span className="skills-column">
                 <FaHtml5 size="1.5em" />
                 <h3>HTML</h3>
               </span>
-              <span className="skills-row">
+              <span className="skills-column">
                 <FaCss3 size="1.5em" />
                 <h3>CSS</h3>
               </span>
-              <span className="skills-row">
+              <span className="skills-column">
                 <SiJavascript size="1.5em" />
                 <h3>Javascript</h3>
               </span>
-              <span className="skills-row">
+              <span className="skills-column">
                 <FaReact size="1.5em" />
                 <h3>React</h3>
               </span>
@@ -80,20 +80,20 @@ function Conhecimento() {
           </div>
           <div className="skills-box">
             <h2>Backend</h2>
-            <div className="skills-column">
-              <span className="skills-row">
+            <div className="skills-row">
+              <span className="skills-column">
                 <FaNodeJs size="1.5em" />
                 <h3>Node</h3>
               </span>
-              <span className="skills-row">
+              <span className="skills-column">
                 <SiExpress size="1.5em" />
                 <h3>Express</h3>
               </span>
-              <span className="skills-row">
+              <span className="skills-column">
                 <SiMongodb size="1.5em" />
                 <h3>Mongo DB</h3>
               </span>
-              <span className="skills-row">
+              <span className="skills-column">
                 <SiJsonwebtokens size="1.5em" />
                 <h3>J W T</h3>
               </span>
@@ -101,20 +101,20 @@ function Conhecimento() {
           </div>
           <div className="skills-box">
             <h2>Ferramentas</h2>
-            <div className="skills-column">
-              <span className="skills-row">
+            <div className="skills-row">
+              <span className="skills-column">
                 <SiVisualstudiocode size="1.5em" />
                 <h3>VSCode</h3>
               </span>
-              <span className="skills-row">
+              <span className="skills-column">
                 <SiGithub size="1.3em" />
                 <h3>Github Desktop</h3>
               </span>
-              <span className="skills-row">
+              <span className="skills-column">
                 <SiInsomnia size="1.5em" />
                 <h3>Insomnia</h3>
               </span>
-              <span className="skills-row">
+              <span className="skills-column">
                 <SiHeroku size="1.5em" />
                 <h3>Heroku</h3>
               </span>

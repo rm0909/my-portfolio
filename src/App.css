@@ -142,20 +142,19 @@ blockquote {
 }
 
 /* Conhecimento */
-.skills-main h1 {
-  text-align: center;
-  font-size: 2em;
+.skills-main{
+
 }
 .skills-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
 }
 .skills-box {
   background-color: var(--secondary-transp);
-  width: 200px;
+  width: 600px;
   border: 1px solid white;
   margin: 1em;
 }
@@ -165,20 +164,30 @@ blockquote {
   border-bottom: 1px solid white;
 }
 
-.skills-row {
+.skills-column {
   display: flex;
   padding: 1em;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
-
-.experience-row {
+.skills-row{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+}
+.experience-block{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+  place-content: center;
+  place-items: center;
+  width: 50vw;
 }
 .experience-box {
   padding: 1em;
@@ -189,7 +198,7 @@ blockquote {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 270px;
+  width: 292px;
   height: 270px;
 }
 .experience-box p {
@@ -316,7 +325,16 @@ textarea {
   .social-media-box p {
     font-size: 0.8em;
   }
-  .experience-block {
+ 
+  .skills-container {
+    flex-direction: row;
+  }
+  .skills-column{
+    width: 70%;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  .skills-row{
     flex-direction: column;
   }
 }
