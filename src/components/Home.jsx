@@ -18,7 +18,7 @@ function Home() {
             Email
           </Link>
         }
-        navA={<Link to="conhecimento">Experiência</Link>}
+        navA={<Link to="conhecimento">Conhecimento</Link>}
         navB={<Link to="projetos">Projetos</Link>}
       />
       <main className="home-main">

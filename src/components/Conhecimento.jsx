@@ -30,7 +30,7 @@ function Conhecimento() {
     <div>
       <Nav
         navMain={<Link to="/form"><AiOutlineMail size="20px" style={{verticalAlign: "middle",margin: "1px"}}/>Email</Link>}
-        navA={<Link to="/">Home</Link>}
+        navA={<Link to="/">Início</Link>}
         navB={<Link to="/projetos">Projetos</Link>}
       />
       <main className="skills-main">

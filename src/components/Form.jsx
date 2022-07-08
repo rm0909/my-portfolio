@@ -32,7 +32,7 @@ function Form() {
   return (
     <main className="form-main">
       <Nav
-        navMain={<Link to="/">Home</Link>}
+        navMain={<Link to="/">Início</Link>}
         navA={<Link to="/conhecimento">Conhecimento</Link>}
         navB={<Link to="/projetos">Projetos</Link>}
       />

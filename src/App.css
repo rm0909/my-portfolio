@@ -142,9 +142,6 @@ blockquote {
 }
 
 /* Conhecimento */
-.skills-main{
-
-}
 .skills-container {
   display: flex;
   flex-direction: column;
@@ -181,13 +178,15 @@ blockquote {
 display: flex;
 align-items: center;
 justify-content: center;
+
 }
 .experience-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(272px,1fr));
   place-content: center;
   place-items: center;
-  width: 50vw;
+ 
+  max-width: 600px;
 }
 .experience-box {
   padding: 1em;
@@ -198,8 +197,8 @@ justify-content: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 292px;
-  height: 270px;
+  width: 272px;
+  height: 250px;
 }
 .experience-box p {
   text-align: center;
@@ -301,6 +300,11 @@ textarea {
   color: rgb(45, 119, 45);
   text-align: center;
 }
+@media screen and (max-width:610px) {
+  .experience-grid{
+    width: 70vw;
+  }
+}
 @media screen and (max-width: 450px) {
   .home-main {
     margin: 0.2em;
@@ -314,7 +318,10 @@ textarea {
   }
   #name {
     margin: 0.5em;
-    font-size: 9vw;
+    font-size: 2em;
+  }
+  #dev{
+    font-size: 0.8em;
   }
   nav {
     flex-direction: column;
@@ -336,5 +343,10 @@ textarea {
   }
   .skills-row{
     flex-direction: column;
+  
   }
+  .skills-box{
+    width: 64%;
+  }
+ 
 }
