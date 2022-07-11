@@ -56,7 +56,7 @@ function Home() {
                 </a>
               </div>
               <div className="social-media-box">
-                <a href="#" target="_blank">
+                <a href="https://www.linkedin.com/in/raphael-machado-600512244/" target="_blank">
                   <GrLinkedin />
                   <p className="icon-text">Linkedin</p>
                 </a>
