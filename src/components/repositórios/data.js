@@ -7,6 +7,7 @@ import tictacUrl from "./images/ticimg.png"
 import pptUrl from "./images/pptimg.png"
 import chuckUrl from "./images/chuckimg.png"
 import countUrl from "./images/countdownimg.png"
+import myStore from "./images/my-store.png"
 
 export const projects = [
   {
@@ -16,6 +17,14 @@ export const projects = [
     page: "https://rm0909.github.io/Flamengo-cards/",
     img: flaUrl,
     githublink: "https://github.com/rm0909/Flamengo-cards",
+  },
+  {
+    name: "Mercado Dibre",
+    description: "Ecommerce app",
+    buildWith: "Cloudinary, Express RestAPI, middlewares, JWT, MongoDB. React Hooks, Router, React-Bootstrap",
+    page: "https://rm0909.github.io/my-store/",
+    img: myStore,
+    githublink: "https://github.com/rm0909/my-store"
   },
   {
     name: "Perguntas e Respostas",
