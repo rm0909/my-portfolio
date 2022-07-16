@@ -32,9 +32,7 @@ function Home() {
             <br />
             <br />
             <blockquote>
-              Há um ano descobri o mundo da programação e desde então aprendo
-              coisas novas a cada dia. Me sinto entusiasmado com as coisas
-              incríveis que podemos criar com códigos.
+              Faço aplicações utilizando a MERN stack
             </blockquote>{" "}
           </div>
         </div>
