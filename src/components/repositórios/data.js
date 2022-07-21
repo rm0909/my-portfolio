@@ -73,22 +73,21 @@ export const projects = [
     page: "https://rm0909.github.io/countdown-app/",
     img: countUrl,
     githublink: "https://github.com/rm0909/countdown-app",
-  },
-  {
-    name: "Jogo da Velha (React)",
-    description:"Jogo da velha, primeiro app em react",
-    buildWith: "React: Hooks",
-    page: "https://rm0909.github.io/react-tic-tac-toe/",
-    img: tictacUrl,
-    githublink: "https://github.com/rm0909/react-tic-tac-toe",
-  },  
-
-  {
-    name: "Pedra Papel e Tesoura",
-    description: "Pedra Papel e Tesoura. Meu primeiro app que fiz a maior parte por conta própria",
-    buildWith: "HTML, CSS, Javascript",
-    page: "https://rm0909.github.io/Rock-paper-scissors/",
-    img: pptUrl,
-    githublink: "https://github.com/rm0909/Rock-paper-scissors",
   }
+  // {
+  //   name: "Jogo da Velha (React)",
+  //   description:"Jogo da velha, primeiro app em react",
+  //   buildWith: "React: Hooks",
+  //   page: "https://rm0909.github.io/react-tic-tac-toe/",
+  //   img: tictacUrl,
+  //   githublink: "https://github.com/rm0909/react-tic-tac-toe",
+  // },  
+  // {
+  //   name: "Pedra Papel e Tesoura",
+  //   description: "Pedra Papel e Tesoura. Meu primeiro app que fiz a maior parte por conta própria",
+  //   buildWith: "HTML, CSS, Javascript",
+  //   page: "https://rm0909.github.io/Rock-paper-scissors/",
+  //   img: pptUrl,
+  //   githublink: "https://github.com/rm0909/Rock-paper-scissors",
+  // }
 ];
