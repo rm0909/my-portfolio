@@ -41,7 +41,7 @@ function Home() {
           <div className="social-media-outter-div">
             <div id="social-media-row">
               <div className="social-media-box">
-                <a href="#" target="_blank">
+                <a href="https://twitter.com/RaphaelmDev" target="_blank">
                   <FiTwitter />
                   <p className="icon-text">Twitter </p>
                 </a>
